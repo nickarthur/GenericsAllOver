@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		C323302A21110264003BF3F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C323302921110264003BF3F6 /* AppDelegate.swift */; };
-		C323302C21110264003BF3F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C323302B21110264003BF3F6 /* ViewController.swift */; };
 		C323302F21110264003BF3F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C323302D21110264003BF3F6 /* Main.storyboard */; };
 		C323303121110265003BF3F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C323303021110265003BF3F6 /* Assets.xcassets */; };
 		C323303421110265003BF3F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C323303221110265003BF3F6 /* LaunchScreen.storyboard */; };
+		C323303D211103D6003BF3F6 /* GenericTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C323303C211103D6003BF3F6 /* GenericTableViewController.swift */; };
+		C323303F211103E3003BF3F6 /* GenericTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C323303E211103E3003BF3F6 /* GenericTableViewCell.swift */; };
+		C323304221110478003BF3F6 /* StartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C323304121110478003BF3F6 /* StartTableViewController.swift */; };
+		C3233044211106A7003BF3F6 /* StartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3233043211106A6003BF3F6 /* StartTableViewCell.swift */; };
+		C323304721110A62003BF3F6 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = C323304621110A62003BF3F6 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C323302621110264003BF3F6 /* GenericsAllOver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GenericsAllOver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C323302921110264003BF3F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C323302B21110264003BF3F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C323302E21110264003BF3F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C323303021110265003BF3F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C323303321110265003BF3F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C323303521110266003BF3F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C323303C211103D6003BF3F6 /* GenericTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTableViewController.swift; sourceTree = "<group>"; };
+		C323303E211103E3003BF3F6 /* GenericTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTableViewCell.swift; sourceTree = "<group>"; };
+		C323304121110478003BF3F6 /* StartTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartTableViewController.swift; sourceTree = "<group>"; };
+		C3233043211106A6003BF3F6 /* StartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartTableViewCell.swift; sourceTree = "<group>"; };
+		C323304621110A62003BF3F6 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,42 @@
 		C323302821110264003BF3F6 /* GenericsAllOver */ = {
 			isa = PBXGroup;
 			children = (
+				C323304521110A56003BF3F6 /* Model */,
+				C323304021110463003BF3F6 /* Controller */,
+				C323303B211103A0003BF3F6 /* Generics */,
 				C323302921110264003BF3F6 /* AppDelegate.swift */,
-				C323302B21110264003BF3F6 /* ViewController.swift */,
 				C323302D21110264003BF3F6 /* Main.storyboard */,
 				C323303021110265003BF3F6 /* Assets.xcassets */,
 				C323303221110265003BF3F6 /* LaunchScreen.storyboard */,
 				C323303521110266003BF3F6 /* Info.plist */,
 			);
 			path = GenericsAllOver;
+			sourceTree = "<group>";
+		};
+		C323303B211103A0003BF3F6 /* Generics */ = {
+			isa = PBXGroup;
+			children = (
+				C323303C211103D6003BF3F6 /* GenericTableViewController.swift */,
+				C323303E211103E3003BF3F6 /* GenericTableViewCell.swift */,
+			);
+			path = Generics;
+			sourceTree = "<group>";
+		};
+		C323304021110463003BF3F6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C323304121110478003BF3F6 /* StartTableViewController.swift */,
+				C3233043211106A6003BF3F6 /* StartTableViewCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C323304521110A56003BF3F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C323304621110A62003BF3F6 /* Person.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C323302C21110264003BF3F6 /* ViewController.swift in Sources */,
+				C323304721110A62003BF3F6 /* Person.swift in Sources */,
+				C323303F211103E3003BF3F6 /* GenericTableViewCell.swift in Sources */,
+				C323303D211103D6003BF3F6 /* GenericTableViewController.swift in Sources */,
+				C323304221110478003BF3F6 /* StartTableViewController.swift in Sources */,
 				C323302A21110264003BF3F6 /* AppDelegate.swift in Sources */,
+				C3233044211106A7003BF3F6 /* StartTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +322,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = GenericsAllOver/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,6 +340,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = GenericsAllOver/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
